@@ -1,0 +1,93 @@
+.performanceReportWrapper {
+  padding: 20px 18px;
+
+  &__title {
+    font-family: ManropeSemiBold;
+    font-size: 23.33px;
+    line-height: 27.34px;
+    text-align: left;
+    margin-bottom: 33px;
+  }
+
+  &__cardsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+    margin-bottom: 39px;
+    width: 100%;
+    overflow: auto;
+  }
+
+  &__card {
+    max-width: 221px;
+    min-width: 221px;
+    max-height: 65.75px;
+    min-height: 65.75px;
+    padding: 10px;
+    background: inherit;
+    border: 1px solid #3fd1fa;
+    border-radius: 8px;
+    color: white;
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+
+  &__headText {
+    font-family: ManropeMedium;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    text-transform: capitalize;
+  }
+
+  &__subText {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+    text-align: left;
+    font-family: ManropeRegular;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #51798a;
+  }
+
+  &__correctionsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 49px;
+  }
+
+  &__dottedLines {
+    border-bottom: 1px dashed #00a7d6;
+    width: 100%;
+    height: 1px;
+  }
+
+  &__correctionsTitle {
+    font-family: ManropeSemiBold;
+    font-size: 23.33px;
+    line-height: 27.34px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  &__questionsContainer {
+    padding: 27px 14px;
+    border: 1px dashed #00a7d6;
+    border-radius: 8px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding: 67px 50px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding: 25px 50px;
+  }
+}

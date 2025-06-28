@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+  text-align: left;
+  width: 100%;
+
+  &__label {
+    font-size: 14px;
+    color: #121212;
+    line-height: 20px;
+    letter-spacing: -2%;
+    margin-bottom: 2px;
+  }
+
+  &__error {
+    font-size: 10px;
+    font-weight: 400;
+    color: #ff5959;
+    line-height: 10px;
+    position: absolute;
+  }
+
+  .select-drop-style {
+    z-index: 200;
+  }
+}

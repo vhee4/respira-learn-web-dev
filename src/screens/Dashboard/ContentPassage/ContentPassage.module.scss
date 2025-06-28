@@ -1,0 +1,104 @@
+.contentPassageWrapper {
+  padding: 20px 18px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: linear-gradient(274.2deg, #9ad2ea 1.89%, #193c4e 84.8%);
+    padding: 16.5px 25px;
+    border-radius: 8px;
+    margin-bottom: 27px;
+  }
+
+  &__topLeftHeadTextWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__topLeftBadge {
+    background-color: rgb(217, 217, 217);
+    color: #197299;
+    font-size: 12px;
+    padding: 4px 10px;
+    font-family: ManropeBold;
+    border-radius: 20px;
+  }
+
+  &__topLeftHeadText {
+    font-family: ManropeBold;
+    font-size: 26.82px;
+    line-height: 31.44px;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  &__topLeftSubText {
+    font-family: ManropeLight;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: left;
+    margin-bottom: 0px;
+    max-width: 500px;
+  }
+
+  &__topRight {
+    background: linear-gradient(
+      92.14deg,
+      rgba(218, 20, 20, 0.78) 9.99%,
+      rgba(238, 71, 71, 0.78) 110.65%
+    );
+    padding: 10.5px 20.5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__timer {
+    font-family: PoppinsBold;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  &__passage {
+    text-align: justify;
+  }
+
+  &__btnWrapper {
+    width: 100% !important;
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    width: 100%;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    font-size: 18px;
+    line-height: 24.59px;
+    font-family: ManropeMedium !important;
+    color: #000000 !important;
+    border: none;
+  }
+
+  @media only screen and (min-width: 480px) {
+    &__btn {
+      width: 295px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding: 67px 50px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding: 67px 50px;
+  }
+}

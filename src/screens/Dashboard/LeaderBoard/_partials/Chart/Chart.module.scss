@@ -1,0 +1,48 @@
+.chartWrapper {
+  width: 100%;
+  min-height: 345px;
+  max-height: 345px;
+  background: linear-gradient(274.2deg, #2a5e74 1.89%, #103c52 84.8%);
+  border: 1px solid #3fd1fa;
+  border-radius: 8px;
+  position: relative;
+  padding: 23px 30px;
+  margin-bottom: 23px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 22.4px;
+    line-height: 26.25px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  &__filterDropDown {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    background: linear-gradient(274.2deg, #2a5e74 1.89%, #103c52 84.8%);
+    border: 1px solid #3fd1fa;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  &__filterText {
+    font-family: ManropeBold;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__arrowIcon {
+    transform: rotate(-90deg);
+  }
+}

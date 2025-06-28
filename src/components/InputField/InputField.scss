@@ -1,0 +1,95 @@
+div {
+  .input_placeholder {
+    position: absolute;
+    color: #c1c1c1;
+    left: 15px;
+    font-size: 12px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease-in;
+    top: 50%;
+  }
+  .input_placeholder.focused {
+    top: 0.5rem;
+    left: 15px;
+    transform: translateY(0);
+    font-size: 12px;
+  }
+
+  .input__container {
+    transition: height 2s;
+    display: flex;
+    flex-direction: row;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: center;
+    color: #121212 !important;
+    // margin-bottom: 25px;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+    background-color: #fff;
+    & > input[type='text'],
+    input[type='password'],
+    input[type='number'],
+    input[type='email'],
+    input[type='date'] {
+      box-sizing: border-box;
+      border: none;
+      font-size: 12px;
+      min-height: 40px;
+      margin: 5px 0px;
+      width: 100%;
+      outline: none;
+      color: #121212 !important;
+      &::placeholder {
+        color: transparent;
+        text-transform: capitalize;
+        font-size: 12px;
+      }
+    }
+
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      box-shadow: 0 0 0 30px white inset !important;
+    }
+
+    input[type='date']:focus::-webkit-datetime-edit {
+      color: black !important;
+    }
+    input[type='date']:required:invalid::-webkit-datetime-edit {
+      color: transparent;
+    }
+    input[type='date']::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+      font-size: 20px;
+      opacity: 0.6;
+      filter: invert(0.8);
+    }
+    input[type='date']::-webkit-calendar-picker-indicator:hover {
+      opacity: 1;
+    }
+
+    &_icon {
+      cursor: pointer;
+    }
+  }
+
+  .input__contpassword {
+    @extend .input__container;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .input-error {
+    color: red !important;
+    font-size: 10px;
+  }
+}

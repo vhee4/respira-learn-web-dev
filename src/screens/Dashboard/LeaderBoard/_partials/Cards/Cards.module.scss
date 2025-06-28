@@ -1,0 +1,38 @@
+.cardsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 22px;
+  margin-bottom: 45.27px;
+  width: 100%;
+  overflow: auto;
+
+  &__card {
+    max-width: 230px;
+    min-width: 230px;
+    padding: 28.91px 20.65px;
+    background: linear-gradient(274.2deg, #2a5e74 1.89%, #103c52 84.8%);
+    border: 1px solid #3fd1fa;
+    border-radius: 8px;
+    color: white;
+  }
+
+  &__headText {
+    font-family: ManropeMedium;
+    font-size: 20.65px;
+    line-height: 27.36px;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-bottom: 2px;
+  }
+
+  &__subText {
+    font-family: ManropeRegular;
+    font-size: 14.93px;
+    line-height: 27.36px;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
