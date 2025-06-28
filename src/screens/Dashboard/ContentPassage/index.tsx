@@ -88,7 +88,7 @@ const ContentPassage = () => {
               </div>
               <p className={styles.contentPassageWrapper__topLeftSubText}>
                 Please read the passage below carefully. Afterward, you’ll be able to answer the
-                cybersecurity question based on the information provided.
+                respiratory disease related questions based on the information provided.
               </p>
             </div>
             <div className={styles.contentPassageWrapper__topRight}>

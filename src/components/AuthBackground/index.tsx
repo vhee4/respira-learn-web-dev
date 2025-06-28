@@ -22,7 +22,8 @@ const AuthBackground = ({
         </div>
         <div className={styles?.authBackgroundWrapper__cardWrapper}>
           <div className={styles?.authBackgroundWrapper__logo}>
-            <PrimaryLogo />
+            <PrimaryLogo className='w-[100px] h-[1px]' />
+            {/* <img src="/logo.png" alt="Logo" width={100} height={100} /> */}
           </div>
 
           <div className={styles?.authBackgroundWrapper__formContainer}>

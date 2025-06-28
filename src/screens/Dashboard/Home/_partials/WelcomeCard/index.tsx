@@ -14,8 +14,8 @@ const WelcomeCard = () => {
           Hello {user?.firstName} {user?.lastName}.
         </h4>
         <p className={styles?.WelcomeCardWrapper__message}>
-          Welcome to SEC03, your cybersecurity training hub! Strengthen your skills, protect your
-          organization, and secure the future with us.
+          Welcome to Respira Learn, Your AI-Powered Respiratory Training Hub! Sharpen your skills, save lives, 
+          and advance respiratory care with our intelligent training platform.
         </p>
       </div>
       <div className={styles?.WelcomeCardWrapper__right}>

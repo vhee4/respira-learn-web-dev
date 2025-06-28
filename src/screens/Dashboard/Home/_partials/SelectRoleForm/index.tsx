@@ -58,7 +58,7 @@ const SelectRoleForm = () => {
         <DropdownInput
           noOrder
           options={roleLists}
-          placeholder="eg. Software Enginner"
+          placeholder="eg. Nurse, Doctor, Pharmacist"
           name="role"
           value={selectRoleFormFormik.values.role}
           onChange={selectRoleFormFormik.handleChange}

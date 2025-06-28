@@ -114,7 +114,7 @@ const Quiz = () => {
                 </div>
               </div>
               <p className={styles.quizWrapper__topLeftSubText}>
-                Pick the correct answer to the cybersecurity question{' '}
+                Pick the correct answer to the follwing questions{' '}
               </p>
             </div>
             <div className={styles.quizWrapper__topRight}>

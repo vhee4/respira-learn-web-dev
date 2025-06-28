@@ -45,6 +45,7 @@ const Register = () => {
     const actionResult = await dispatch(
       register({ firstName, lastName, email, password: confirmPassword })
     );
+    console.log('actionResult', actionResult);
     if (register.fulfilled.match(actionResult)) {
       const { status, message, data } = actionResult.payload;
       if (status && status === 201) {
