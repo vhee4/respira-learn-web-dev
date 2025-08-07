@@ -39,7 +39,7 @@ const ContentPassage = () => {
         };
 
         await dispatch(setQuestionsData(payload));
-        navigate('/dashboard/quiz');
+        navigate('/learning/quiz');
       }
     } else if (getSecurityQuestionsByUserRole.rejected.match(actionResult)) {
       const errorMessage = actionResult.error?.message || ERROR_OCCURED_MESSAGE;

@@ -1,0 +1,134 @@
+.DiagnosisInfoBanner {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 20px auto;
+  background: #e4f6fd;
+  color: #195873;
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 1.07rem;
+  box-shadow: 0 4px 20px rgba(0, 167, 214, 0.07);
+
+  .DiagnosisInfoIcon {
+    font-size: 2.3rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+}
+
+.DiagnosisChatWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+  max-width: 720px;
+  margin: 32px auto 0 auto;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 48px rgba(44, 151, 176, 0.1);
+  overflow: hidden;
+  min-height: 480px;
+}
+
+.DiagnosisChatHeader {
+  padding: 32px 32px 0 32px;
+}
+
+.DiagnosisChatHistory {
+  flex: 1 1 0%;
+  padding: 20px 32px;
+  overflow-y: auto;
+  background: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.DiagnosisChatMsgUser {
+  align-self: flex-end;
+  background: #00a7d6;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 18px 18px 4px 18px;
+  max-width: 70%;
+  word-break: break-word;
+  font-size: 1rem;
+  margin-bottom: 2px;
+  box-shadow: 0 2px 8px rgba(0, 167, 214, 0.07);
+}
+
+.DiagnosisChatMsgAssistant {
+  align-self: flex-start;
+  background: #eef6fa;
+  color: #19223c;
+  padding: 12px 20px;
+  border-radius: 18px 18px 18px 4px;
+  max-width: 70%;
+  word-break: break-word;
+  font-size: 1rem;
+  border: 1px solid #e3f2fb;
+  margin-bottom: 2px;
+}
+
+.DiagnosisChatMsgContent {
+  font-size: 1.06rem;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.DiagnosisChatInputWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 22px 32px;
+  background: #fff;
+  border-top: 1px solid #e3f2fb;
+}
+
+.DiagnosisChatInput {
+  flex: 1;
+  border-radius: 8px;
+  border: 1px solid #d4e1f0;
+  padding: 14px 16px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  min-height: 44px;
+  max-height: 100px;
+  background: #f9fbfd;
+  transition: border-color 0.18s;
+}
+
+.DiagnosisChatInput.isFocused,
+.DiagnosisChatInput:focus {
+  border-color: #00a7d6;
+  background: #fff;
+}
+
+.DiagnosisChatSendBtn {
+  min-width: 110px;
+  padding: 13px 0;
+  font-size: 1.06rem;
+  border-radius: 8px;
+  font-weight: 600;
+  background: linear-gradient(92deg, #00a7d6 80%, #43c7ec 100%);
+  color: #fff;
+  box-shadow: 0 2px 16px rgba(0, 167, 214, 0.08);
+  border: none;
+  font-family: PoppinsRegular;
+}
+
+.DiagnosisChatCursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 1.2s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

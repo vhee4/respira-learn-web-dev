@@ -60,7 +60,7 @@ const Quiz = () => {
     };
 
     await dispatch(setQuestionsData(payload));
-    navigate('/dashboard/performance-report');
+    navigate('/learning/performance-report');
   };
 
   useEffect(() => {

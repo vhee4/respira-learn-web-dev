@@ -39,7 +39,7 @@ const Login = () => {
       const { status } = actionResult.payload;
       if (status && status === 200) {
         toast.success(SIGNIN_MESSAGE);
-        navigate('/dashboard');
+        navigate('/learning');
       }
     } else if (login.rejected.match(actionResult)) {
       const errorMessage = actionResult.error?.message || ERROR_OCCURED_MESSAGE;

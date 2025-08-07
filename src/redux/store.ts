@@ -4,6 +4,7 @@ import questionsReducer from './slices/questions/questionsSlice';
 
 import { AuthSlice } from './slices/auth';
 import { SecurityQuestionsSlice } from './slices/securityQuestions';
+import { diagnosisSlice } from './slices/diagnosis';
 
 export const store = configureStore({
   reducer: {
@@ -11,7 +12,8 @@ export const store = configureStore({
     dashboard: dashboardReducer,
     questions: questionsReducer,
     auth: AuthSlice.reducer,
-    securityQuestionsSlice: SecurityQuestionsSlice.reducer
+    securityQuestionsSlice: SecurityQuestionsSlice.reducer,
+    diagnosisSlice: diagnosisSlice.reducer
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

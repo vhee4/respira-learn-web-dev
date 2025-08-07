@@ -6,28 +6,28 @@ import SidebarLogoutIcon from '../../../../../../assets/svg_component/SidebarLog
 
 export const topSidebarLinks: ISidebarLinkItem[] = [
   {
-    title: 'Dashboard',
-    linkTo: '/dashboard',
-    activeLink: ['/dashboard'],
-    icon: <SidebarHomeIcon />,
-    activeIcon: <SidebarHomeIcon />,
+    title: 'Learning',
+    linkTo: '/learning',
+    activeLink: ['/learning'],
+    icon: <SidebarLearningIcon />,
+    activeIcon: <SidebarLearningIcon />,
     key: 'HOME_ICON'
   },
   {
     title: 'Leaderboard',
-    linkTo: '/dashboard/leaderboard',
-    activeLink: ['/dashboard/leaderboard'],
+    linkTo: '/learning/leaderboard',
+    activeLink: ['/learning/leaderboard'],
     icon: <SidebarLeaderBoardIcon />,
     activeIcon: <SidebarLeaderBoardIcon />,
     key: 'LEADER_BOARD'
   },
   {
-    title: 'Learning',
-    linkTo: '/dashboard/learning',
-    activeLink: ['/dashboard/learning'],
-    icon: <SidebarLearningIcon />,
-    activeIcon: <SidebarLearningIcon />,
-    key: 'LEARNING'
+    title: 'Diagnosis',
+    linkTo: '/learning/diagnosis',
+    activeLink: ['/learning/diagnosis'],
+    icon: <SidebarHomeIcon />,
+    activeIcon: <SidebarHomeIcon />,
+    key: 'DIAGNOSIS'
   }
 ];
 

@@ -38,7 +38,7 @@ const SelectRoleForm = () => {
       if (status && status === 200) {
         await dispatch(getUserDetails());
         toast.success(message);
-        navigate('/dashboard/content-passage');
+        navigate('/learning/content-passage');
       }
     } else if (updateUserRole.rejected.match(actionResult)) {
       const errorMessage = actionResult.error?.message || ERROR_OCCURED_MESSAGE;

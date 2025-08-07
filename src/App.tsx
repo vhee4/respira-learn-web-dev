@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/verify-otp" element={<VerifyOtp />} />
-          <Route path="/dashboard/*" element={<Dashboard />} />
+          <Route path="/learning/*" element={<Dashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </React.Suspense>

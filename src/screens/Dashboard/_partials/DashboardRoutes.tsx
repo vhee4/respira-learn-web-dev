@@ -5,7 +5,7 @@ import { SuspenseLoader } from '../../../components';
 const Home = React.lazy(() => import('../Home'));
 const ContentPassage = React.lazy(() => import('../ContentPassage'));
 const LeaderBoard = React.lazy(() => import('../LeaderBoard'));
-const Learning = React.lazy(() => import('../Learning'));
+const Diagnosis = React.lazy(() => import('../Diagnosis'));
 const Quiz = React.lazy(() => import('../Quiz'));
 const PerformanceReport = React.lazy(() => import('../PerformanceReport'));
 const NotFound = React.lazy(() => import('../../../components/NotFound'));
@@ -17,7 +17,7 @@ const DashboardRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/content-passage" element={<ContentPassage />} />
         <Route path="/leaderboard" element={<LeaderBoard />} />
-        <Route path="/learning" element={<Learning />} />
+        <Route path="/diagnosis" element={<Diagnosis />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/performance-report" element={<PerformanceReport />} />
         <Route path="*" element={<NotFound />} />
